@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Книжный клуб «Страница»</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="brand">Книжный клуб «Страница»</p>
+      <nav aria-label="Основная навигация">
+        <a href="#topics">Что читаем</a>
+        <a href="#schedule">Расписание</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h1>Читаем вместе и обсуждаем прочитанное</h1>
+      <p>Раз в неделю выбираем книгу, делимся впечатлениями и находим новых друзей по интересам.</p>
+      <a class="button" href="#topics">Посмотреть, что читаем</a>
+    </section>
+
+    <section id="topics">
+      <h2>Что мы читаем</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Классика</h3>
+          <p>Перечитываем знакомые книги и находим в них новые смыслы.</p>
+        </article>
+        <article class="card">
+          <h3>Современная проза</h3>
+          <p>Обсуждаем романы и рассказы, вышедшие в последние годы.</p>
+        </article>
+        <article class="card card-featured">
+          <h3>Научная фантастика</h3>
+          <p>Выбор месяца: разбираем, как авторы представляют будущее.</p>
+        </article>
+        <article class="card">
+          <h3>Читательский дневник</h3>
+          <p>Учимся коротко записывать мысли о книге и делиться ими.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="schedule" class="schedule">
+      <h2>Расписание</h2>
+      <p>Встречи проходят по четвергам с 15:30 до 17:00.</p>
+    </section>
+
+    <section id="contacts" class="contacts">
+      <h2>Как присоединиться</h2>
+      <p>Приходите в кабинет 205 после занятий. Библиотечные книги выдаём на месте.</p>
+    </section>
+    <section id="join" class="join">
+      <h2>Знакомство с участником</h2>
+      <p>Учебная демонстрация. Данные никуда не отправляются.</p>
+      <label for="visitor-name">Ваше имя</label>
+      <input id="visitor-name" type="text" maxlength="40">
+      <button id="join-button" class="button" type="button">
+        Поприветствовать
+      </button>
+      <button id="reset-button" class="button" type="button">
+        Сбросить
+      </button>
+      <p id="message" role="status">Здесь появится сообщение.</p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>Учебный проект. Автор: Имя Фамилия.</p>
+  </footer>
+</body>
+</html>
